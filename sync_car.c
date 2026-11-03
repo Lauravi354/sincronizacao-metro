@@ -55,3 +55,20 @@ void station_on_board(struct station *station)
 
     pthread_mutex_unlock(&station->mutex);
 }
+
+void station_load_car(struct station *station, int count)
+{
+    pthread_mutex_lock(&station->mutex);
+
+    station->vagas = count;
+
+    pthread_cond_broadcast(&station->pode_embarcar);
+
+    while ((station->vagas > 0 && station->esperando > 0) || station->embarcando > 0) {
+        pthread_cond_wait(&station->embarque_concluido, &station->mutex);
+    }
+
+    station->vagas = 0;
+
+    pthread_mutex_unlock(&station->mutex);
+}

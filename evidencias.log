@@ -1,0 +1,29 @@
+Script started on 2026-11-04 18:46:24-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="133" LINES="7"]
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro[00m$ [7mdate -Is[27mdate -Is
+[?2004l2026-11-04T18:46:33-03:00
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro[00m$ [7mwhoami[27mwhoami
+[?2004llaura
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro[00m$ [7mpwd[27mpwd
+[?2004l/mnt/c/Users/laura/OneDrive/Desktop/metro
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro[00m$ [7mmake clean[27mmake clean
+[?2004lmake: *** No rule to make target 'clean'.  Stop.
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro[00m$ [7mmake[27m[1Pmak[K[K[K[7mcd sincronizacao-metro[27mcd sincronizacao-metro
+[?2004l[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[00m$ [7mmake clean[27mmake clean
+[?2004lrm -f *.o sync_car
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[00m$ [7mmake[27mmake
+[?2004lgcc -pthread -c sync_car-runner.c
+gcc sync_car-runner.o -pthread -o sync_car
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[00m$ [7m./sync_car[27m./sync_car
+[?2004lcar entering station with 44 free seats
+car departed station with 44 new passenger(s) (expected 44)
+car entering station with 14 free seats
+car departed station with 14 new passenger(s) (expected 14)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 36 free seats
+car departed station with 21 new passenger(s) (expected 21)
+Looks good!
+[?2004h]0;laura@ideaped-Laura: /mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[01;32mlaura@ideaped-Laura[00m:[01;34m/mnt/c/Users/laura/OneDrive/Desktop/metro/sincronizacao-metro[00m$ exti[K[K[Kxit
+[?2004lexit
+
+Script done on 2026-11-04 18:50:34-03:00 [COMMAND_EXIT_CODE="0"]

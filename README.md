@@ -6,9 +6,10 @@ O programa controla a reserva de assentos e garante que o metrô só possa parti
 
 ## Arquivos
 
-- `sync_car.c`: contém a estrutura da estação e as funções de inicialização, espera por uma vaga, confirmação de embarque e carregamento do metrô.
-- `sync_car-runner.c`: programa de testes fornecido pelo professor. Contém a função `main` e inclui `sync_car.c` diretamente.
-- `Makefile`: contém os comandos para compilar, executar e limpar os arquivos gerados.
+- `sync_car.c`: contém as funções de inicialização, espera por uma vaga, confirmação de embarque e carregamento do metrô.
+- `sync_car.h`: contém a estrutura da estação e as declarações das quatro funções.
+- `sync_car-runner.c`: programa de testes fornecido pelo professor. Contém a função `main` e inclui o cabeçalho `sync_car.h`.
+- `makefile`: contém os comandos para compilar, executar e limpar os arquivos gerados.
 - `README.md`: apresenta o projeto e as instruções de uso.
 
 ## Ambiente
@@ -30,7 +31,7 @@ No terminal, dentro da pasta do projeto, execute:
 make
 ```
 
-Será gerado o executável `sync_car`.
+Os arquivos `sync_car.c` e `sync_car-runner.c` serão compilados separadamente e será gerado o executável `sync_car`.
 
 ## Execução dos testes
 

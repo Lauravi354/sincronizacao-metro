@@ -1,15 +1,5 @@
-#include <pthread.h>
+#include "sync_car.h"
 
-struct station {
-    int esperando;
-    int vagas;
-    int embarcando;
-
-    pthread_mutex_t mutex;
-
-    pthread_cond_t pode_embarcar;
-    pthread_cond_t embarque_concluido;
-};
 void station_init(struct station *station)
 {
     station->esperando = 0;

@@ -10,8 +10,8 @@ struct station {
     pthread_cond_t pode_embarcar;
     pthread_cond_t embarque_concluido;
 };
-
-void station_init(struct station *station){
+void station_init(struct station *station)
+{
     station->esperando = 0;
     station->vagas = 0;
     station->embarcando = 0;
@@ -64,8 +64,12 @@ void station_load_car(struct station *station, int count)
 
     pthread_cond_broadcast(&station->pode_embarcar);
 
-    while ((station->vagas > 0 && station->esperando > 0) || station->embarcando > 0) {
-        pthread_cond_wait(&station->embarque_concluido, &station->mutex);
+    while ((station->vagas > 0 && station->esperando > 0) ||
+           station->embarcando > 0) {
+        pthread_cond_wait(
+            &station->embarque_concluido,
+            &station->mutex
+        );
     }
 
     station->vagas = 0;
